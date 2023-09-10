@@ -1,7 +1,7 @@
 def binary_search_recursive(arr, target, low, high):
     if low <= high:
         mid = (low + high) // 2  # Calculate the middle index
-
+        # this // is floor division
         if arr[mid] == target:
             return mid  # Target found, return its index
         elif arr[mid] < target:
